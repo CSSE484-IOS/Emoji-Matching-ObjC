@@ -12,6 +12,13 @@
 		1B3C534420688806003EF45D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C534220688806003EF45D /* Main.storyboard */; };
 		1B3C534620688806003EF45D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C534520688806003EF45D /* Assets.xcassets */; };
 		1B3C534920688806003EF45D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C534720688806003EF45D /* LaunchScreen.storyboard */; };
+		1B3C5357206888D8003EF45D /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5350206888D7003EF45D /* Icon-72.png */; };
+		1B3C5358206888D8003EF45D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5351206888D7003EF45D /* Icon@2x.png */; };
+		1B3C5359206888D8003EF45D /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5352206888D7003EF45D /* Icon-72@2x.png */; };
+		1B3C535A206888D8003EF45D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5353206888D7003EF45D /* Icon.png */; };
+		1B3C535B206888D8003EF45D /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5354206888D7003EF45D /* Icon-Small-50@2x.png */; };
+		1B3C535C206888D8003EF45D /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5355206888D8003EF45D /* Icon-Small-50.png */; };
+		1B3C535D206888D8003EF45D /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5356206888D8003EF45D /* Icon-60.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		1B3C534520688806003EF45D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B3C534820688806003EF45D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B3C534A20688806003EF45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B3C5350206888D7003EF45D /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		1B3C5351206888D7003EF45D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		1B3C5352206888D7003EF45D /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		1B3C5353206888D7003EF45D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1B3C5354206888D7003EF45D /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		1B3C5355206888D8003EF45D /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		1B3C5356206888D8003EF45D /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,13 @@
 		1B3C533D20688806003EF45D /* Emoji Matching */ = {
 			isa = PBXGroup;
 			children = (
+				1B3C5356206888D8003EF45D /* Icon-60.png */,
+				1B3C5350206888D7003EF45D /* Icon-72.png */,
+				1B3C5352206888D7003EF45D /* Icon-72@2x.png */,
+				1B3C5355206888D8003EF45D /* Icon-Small-50.png */,
+				1B3C5354206888D7003EF45D /* Icon-Small-50@2x.png */,
+				1B3C5353206888D7003EF45D /* Icon.png */,
+				1B3C5351206888D7003EF45D /* Icon@2x.png */,
 				1B3C533E20688806003EF45D /* AppDelegate.swift */,
 				1B3C534020688806003EF45D /* ViewController.swift */,
 				1B3C534220688806003EF45D /* Main.storyboard */,
@@ -123,9 +144,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3C535D206888D8003EF45D /* Icon-60.png in Resources */,
 				1B3C534920688806003EF45D /* LaunchScreen.storyboard in Resources */,
+				1B3C5357206888D8003EF45D /* Icon-72.png in Resources */,
+				1B3C535B206888D8003EF45D /* Icon-Small-50@2x.png in Resources */,
+				1B3C535C206888D8003EF45D /* Icon-Small-50.png in Resources */,
+				1B3C5359206888D8003EF45D /* Icon-72@2x.png in Resources */,
 				1B3C534620688806003EF45D /* Assets.xcassets in Resources */,
 				1B3C534420688806003EF45D /* Main.storyboard in Resources */,
+				1B3C535A206888D8003EF45D /* Icon.png in Resources */,
+				1B3C5358206888D8003EF45D /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
