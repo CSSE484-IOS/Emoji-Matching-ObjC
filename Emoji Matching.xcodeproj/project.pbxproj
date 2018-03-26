@@ -19,6 +19,7 @@
 		1B3C535B206888D8003EF45D /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5354206888D7003EF45D /* Icon-Small-50@2x.png */; };
 		1B3C535C206888D8003EF45D /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5355206888D8003EF45D /* Icon-Small-50.png */; };
 		1B3C535D206888D8003EF45D /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5356206888D8003EF45D /* Icon-60.png */; };
+		1B3C536920695CFF003EF45D /* MatchingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C536820695CFF003EF45D /* MatchingGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1B3C5354206888D7003EF45D /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
 		1B3C5355206888D8003EF45D /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		1B3C5356206888D8003EF45D /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		1B3C536820695CFF003EF45D /* MatchingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				1B3C534520688806003EF45D /* Assets.xcassets */,
 				1B3C534720688806003EF45D /* LaunchScreen.storyboard */,
 				1B3C534A20688806003EF45D /* Info.plist */,
+				1B3C536820695CFF003EF45D /* MatchingGame.swift */,
 			);
 			path = "Emoji Matching";
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				1B3C534120688806003EF45D /* ViewController.swift in Sources */,
 				1B3C533F20688806003EF45D /* AppDelegate.swift in Sources */,
+				1B3C536920695CFF003EF45D /* MatchingGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
