@@ -49,62 +49,47 @@
 }
 
 - (void) pressedCardAtIndex:(NSInteger) index {
-    
+    if (self.firstClick == -1) {
+        if (cardStates[index] == CardStateHidden) {
+            cardStates[index] = CardStateShown;
+            self.firstClick = index;
+            self.gameState = GameStateWaitSecond;
+        }
+    } else if (self.secondClick == -1 && index != self.firstClick) {
+        if (cardStates[index] == CardStateHidden) {
+            cardStates[index] = CardStateShown;
+            self.secondClick = index;
+            self.gameState = GameStateTurnDone;
+        }
+    }
 }
 
 - (void) startNewTurn {
-    
+    if (self.cards[self.firstClick] == self.cards[self.secondClick]) {
+        cardStates[self.firstClick] = CardStateRemoved;
+        cardStates[self.secondClick] = CardStateRemoved;
+    } else {
+        cardStates[self.firstClick] = CardStateHidden;
+        cardStates[self.secondClick] = CardStateHidden;
+    }
+    self.firstClick = -1;
+    self.secondClick = -1;
+    self.gameState = GameStateWaitFirst;
 }
 
 - (CardState) getCardStateAtIndex:(NSInteger) index {
-    return CardStateHidden;
+    return cardStates[index];
 }
 
 - (NSString*) description {
-    return @"";
+    NSMutableString* cardsString = [[NSMutableString alloc] init];
+    for (int i = 0; i < self.cards.count; i++) {
+        if (i % 4 == 0 && i > 0) {
+            [cardsString appendString:@"\n"];
+        }
+        [cardsString appendString:self.cards[i]];
+    }
+    return cardsString;
 }
 
 @end
-
-//class MatchingGame: CustomStringConvertible {
-//
-//    func pressedCard(atIndex: Int) {
-//        if self.firstClick == -1 {
-//            if self.cardStates[atIndex] == .hidden {
-//                self.cardStates[atIndex] = .shown
-//                self.firstClick = atIndex
-//                self.gameState = .waitSecond(firstClick)
-//            }
-//        } else if self.secondClick == -1 && atIndex != self.firstClick {
-//            if self.cardStates[atIndex] == .hidden {
-//                self.cardStates[atIndex] = .shown
-//                self.secondClick = atIndex
-//                self.gameState = .turnDone(firstClick, secondClick)
-//            }
-//        }
-//    }
-//
-//    func startNewTurn() {
-//        if self.cards[self.firstClick] == self.cards[self.secondClick] {
-//            self.cardStates[self.firstClick] = .removed
-//            self.cardStates[self.secondClick] = .removed
-//        } else {
-//            self.cardStates[self.firstClick] = .hidden
-//            self.cardStates[self.secondClick] = .hidden
-//        }
-//        self.firstClick = -1
-//        self.secondClick = -1
-//        self.gameState = .waitFirst
-//    }
-//
-//    var description: String {
-//        var str = ""
-//        for i in 0..<self.numPairs * 2 {
-//            if i % 4 == 0 && i > 0 {
-//                str += "\n"
-//            }
-//            str += "\(self.cards[i])"
-//        }
-//        return str
-//    }
-//}

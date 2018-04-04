@@ -61,13 +61,13 @@ class ViewController: UIViewController {
         }
         firstClick = -1
         secondClick = -1
-        print(game)
+        print(game.description()!)
     }
     
     func updateCard(_ index: Int) {
         let btn = gameBoardBtns[index]
         if game.getCardState(at: index) == .hidden {
-            btn.setTitle("\(game.cardBack)", for: UIControlState.normal)
+            btn.setTitle("\(game.cardBack!)", for: UIControlState.normal)
             btn.isEnabled = true
         } else if game.getCardState(at: index) == .shown {
             btn.setTitle("\(game.cards[index])", for: UIControlState.disabled)

@@ -40,20 +40,3 @@ typedef NS_ENUM(NSInteger, GameState) {
 @property (nonatomic) NSInteger secondClick;
 
 @end
-
-//    enum GameState {
-    //    case waitFirst
-    //    case waitSecond(Int)
-    //    case turnDone(Int, Int)
-    //
-    //        func simpleDescription() -> String {
-    //            switch self {
-    //            case .waitFirst:
-    //                return "Waiting for first selection"
-    //            case .waitSecond(let first):
-    //                return "Waiting for second selection: first click = \(first)"
-    //            case .turnDone(let first, let second):
-    //                return "Turn complete: first click = \(first) second click = \(second)"
-    //            }
-    //        }
-    //    }
