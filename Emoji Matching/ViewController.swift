@@ -31,7 +31,7 @@ class ViewController: UIViewController {
             return
         }
         let gameBoardBtn = sender as! UIButton
-        self.game.pressedCard(atIndex: gameBoardBtn.tag)
+        self.game.pressedCard(at: gameBoardBtn.tag)
         
         if game.firstClick != -1 {
             if game.secondClick != -1 {
@@ -66,10 +66,10 @@ class ViewController: UIViewController {
     
     func updateCard(_ index: Int) {
         let btn = gameBoardBtns[index]
-        if game.cardStates[index] == .hidden {
+        if game.getCardState(at: index) == .hidden {
             btn.setTitle("\(game.cardBack)", for: UIControlState.normal)
             btn.isEnabled = true
-        } else if game.cardStates[index] == .shown {
+        } else if game.getCardState(at: index) == .shown {
             btn.setTitle("\(game.cards[index])", for: UIControlState.disabled)
             btn.isEnabled = false
         } else {

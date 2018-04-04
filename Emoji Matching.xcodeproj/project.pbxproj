@@ -19,7 +19,7 @@
 		1B3C535B206888D8003EF45D /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5354206888D7003EF45D /* Icon-Small-50@2x.png */; };
 		1B3C535C206888D8003EF45D /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5355206888D8003EF45D /* Icon-Small-50.png */; };
 		1B3C535D206888D8003EF45D /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3C5356206888D8003EF45D /* Icon-60.png */; };
-		1B3C536920695CFF003EF45D /* MatchingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C536820695CFF003EF45D /* MatchingGame.swift */; };
+		1BB5F6B32074503D00AEDB62 /* MatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5F6B22074503D00AEDB62 /* MatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,9 @@
 		1B3C5354206888D7003EF45D /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
 		1B3C5355206888D8003EF45D /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		1B3C5356206888D8003EF45D /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
-		1B3C536820695CFF003EF45D /* MatchingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingGame.swift; sourceTree = "<group>"; };
+		1BB5F6B02074503C00AEDB62 /* Emoji Matching-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Emoji Matching-Bridging-Header.h"; sourceTree = "<group>"; };
+		1BB5F6B12074503D00AEDB62 /* MatchingGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchingGame.h; sourceTree = "<group>"; };
+		1BB5F6B22074503D00AEDB62 /* MatchingGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,9 @@
 				1B3C534520688806003EF45D /* Assets.xcassets */,
 				1B3C534720688806003EF45D /* LaunchScreen.storyboard */,
 				1B3C534A20688806003EF45D /* Info.plist */,
-				1B3C536820695CFF003EF45D /* MatchingGame.swift */,
+				1BB5F6B12074503D00AEDB62 /* MatchingGame.h */,
+				1BB5F6B22074503D00AEDB62 /* MatchingGame.m */,
+				1BB5F6B02074503C00AEDB62 /* Emoji Matching-Bridging-Header.h */,
 			);
 			path = "Emoji Matching";
 			sourceTree = "<group>";
@@ -120,6 +124,7 @@
 				TargetAttributes = {
 					1B3C533A20688806003EF45D = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -169,7 +174,7 @@
 			files = (
 				1B3C534120688806003EF45D /* ViewController.swift in Sources */,
 				1B3C533F20688806003EF45D /* AppDelegate.swift in Sources */,
-				1B3C536920695CFF003EF45D /* MatchingGame.swift in Sources */,
+				1BB5F6B32074503D00AEDB62 /* MatchingGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,12 +311,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 784G6DP2V5;
 				INFOPLIST_FILE = "Emoji Matching/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rosehulman.fengy2.Emoji-Matching";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Emoji Matching/Emoji Matching-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,12 +329,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 784G6DP2V5;
 				INFOPLIST_FILE = "Emoji Matching/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rosehulman.fengy2.Emoji-Matching";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Emoji Matching/Emoji Matching-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
